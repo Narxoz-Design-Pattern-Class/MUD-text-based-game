@@ -1,5 +1,5 @@
 # MUD Design Patterns Project - 12-Week Roadmap
-
+** java -cp out com.example.mud.factory.method.MUDFactoryMethodDemo
 ## Overview
 
 Welcome to the MUD Design Patterns Project! In this course, we will gradually build a text-based multiplayer game (MUD) by introducing and integrating design patterns week by week. While the game context makes the concepts tangible and engaging, our primary goal is to understand **why** and **when** to apply each design pattern to create flexible, maintainable, and scalable software.
