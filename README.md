@@ -122,12 +122,3 @@ Each week’s design patterns will be integrated into this evolving project, all
 ## License
 
 *Specify your license here (e.g., MIT License).*
-
-## Contact
-
-For any questions or further details, please contact [your-email@example.com] or visit our [GitHub repository link].
-
----
-
-Happy coding and exploring design patterns! This roadmap will guide you through building a robust software architecture that not only powers a game but can be applied to any complex software project.
-
