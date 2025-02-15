@@ -1,5 +1,38 @@
 # MUD Design Patterns Project - 12-Week Roadmap
 
+src/
+└── com/
+    └── example/
+        └── mud/
+            ├── controller/
+            │   └── MUDController.java        // The simple controller that handles commands, runs the main loop
+            ├── entities/
+            │   ├── IGameEntity.java         // Base interface for all in-game entities (Room, NPC, Item, etc.)
+            │   ├── Room.java               // Concrete class implementing IGameEntity
+            │   ├── NPC.java                // Concrete class implementing IGameEntity
+            │   ├── Item.java               // Another entity implementing IGameEntity
+            │   ├── Door.java               // Optional entity for locked/unlocked passage
+            │   ├── Monster.java            // Extends NPC for hostile creatures
+            │   ├── Merchant.java           // Extends NPC for trading logic
+            │   ├── Container.java          // Implementing IGameEntity, e.g. a chest or crate
+            │   └── ... (any other entities)
+            ├── factory/
+            │   ├── method/
+            │   │   ├── MUDGameEntityFactory.java     // Abstract class for Factory Method
+            │   │   ├── ConcreteMUDGameEntityFactory.java // Concrete implementation deciding entity creation
+            │   │   └── ... (any other related classes)
+            │   └── abstractfactory/
+            │       ├── MUDAbstractFactory.java       // Interface for creating themed families (createRoom, createNPC)
+            │       ├── FantasyMUDFactory.java         // Concrete factory for fantasy-themed entities
+            │       ├── SciFiMUDFactory.java           // Concrete factory for sci-fi-themed entities
+            │       └── ... (any additional themes or expansions)
+            ├── player/
+            │   └── Player.java               // The player class, holding inventory, currentRoom, etc.
+            ├── MUDMain.java                  // An optional main entry point that sets up rooms, items, etc. 
+            └── ... (other supporting classes, e.g. MUDEngine, command parser, etc.)
+
+
+
 ## Overview
 
 Welcome to the MUD Design Patterns Project! In this course, we will gradually build a text-based multiplayer game (MUD) by introducing and integrating design patterns week by week. While the game context makes the concepts tangible and engaging, our primary goal is to understand **why** and **when** to apply each design pattern to create flexible, maintainable, and scalable software.
