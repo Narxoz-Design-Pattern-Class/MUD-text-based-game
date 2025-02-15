@@ -28,8 +28,8 @@ src/
             │       └── ... (any additional themes or expansions)
             ├── player/
             │   └── Player.java               // The player class, holding inventory, currentRoom, etc.
-            ├── MUDMain.java                  // An optional main entry point that sets up rooms, items, etc. 
-
+            ├── MUDMain.java                  // An optional main entry point that sets up rooms, items, etc.
+            └── ... (other supporting classes, e.g. MUDEngine, command parser, etc.)
 
 
 ## Overview
